@@ -38,7 +38,6 @@
             overflow-x: hidden;
         }
 
-        /* 🔦 SPOTLIGHT BACKGROUND */
         .spotlight-container {
             position: fixed;
             top: 0;
@@ -90,7 +89,6 @@
             50% { transform: translateY(-30px) scale(1.1); }
         }
 
-        /* NAVIGATION */
         nav {
             position: fixed;
             top: 0;
@@ -153,7 +151,6 @@
             width: 100%;
         }
 
-        /* MAIN CONTENT */
         .content {
             position: relative;
             z-index: 1;
@@ -165,7 +162,6 @@
             margin: auto;
         }
 
-        /* GLASS CARDS */
         .glass-card {
             background: var(--bg-card);
             border-radius: 24px;
@@ -181,7 +177,6 @@
             box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 212, 255, 0.1);
         }
 
-        /* HERO SECTION */
         .hero {
             padding-top: 10rem;
             display: grid;
@@ -268,7 +263,6 @@
             box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
         }
 
-        /* PROFILE CARD */
         .profile-wrapper {
             position: relative;
         }
@@ -366,7 +360,6 @@
             50% { opacity: 0.3; }
         }
 
-        /* SECTION HEADERS */
         .section-header {
             text-align: center;
             margin-bottom: 3rem;
@@ -393,7 +386,6 @@
             margin: auto;
         }
 
-        /* ABOUT CARDS */
         .about-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -433,7 +425,6 @@
             color: var(--text-primary);
         }
 
-        /* PROJECTS */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -503,7 +494,6 @@
             gap: 0.8rem;
         }
 
-        /* VISION SECTION */
         .vision-card {
             background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(99, 102, 241, 0.05));
             border: 1px solid rgba(0, 212, 255, 0.2);
@@ -534,7 +524,6 @@
             font-weight: 500;
         }
 
-        /* CONTACT */
         .contact-section {
             text-align: center;
         }
@@ -570,7 +559,6 @@
             font-size: 1.2rem;
         }
 
-        /* FOOTER */
         footer {
             text-align: center;
             padding: 2rem;
@@ -579,7 +567,6 @@
             margin-top: 3rem;
         }
 
-        /* MOBILE RESPONSIVE */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -611,14 +598,12 @@
     </style>
 </head>
 <body>
-    <!-- 🔦 SPOTLIGHT BACKGROUND -->
     <div class="spotlight-container">
         <div class="spotlight spotlight-1"></div>
         <div class="spotlight spotlight-2"></div>
         <div class="spotlight spotlight-3"></div>
     </div>
 
-    <!-- NAVIGATION -->
     <nav>
         <div class="nav-container">
             <div class="logo">&lt;Alok /&gt;</div>
@@ -632,7 +617,6 @@
     </nav>
 
     <div class="content">
-        <!-- HERO SECTION -->
         <section class="hero">
             <div class="hero-content">
                 <h1>Hello, I'm <span class="gradient-text">Alok</span> 👋</h1>
@@ -660,7 +644,7 @@
                 <div class="profile-card glass-card">
                     <div class="profile-img-container">
                         <div class="profile-glow"></div>
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Alok" class="profile-img">
+                        <img src="alok-portfolio-img.jpg" alt="Alok" class="profile-img">
                     </div>
                     <h2 class="profile-name">Alok Vishwakarma</h2>
                     <p class="profile-location">
@@ -671,7 +655,6 @@
             </div>
         </section>
 
-        <!-- ABOUT SECTION -->
         <section id="about">
             <div class="section-header">
                 <p class="section-label">About Me</p>
@@ -703,7 +686,6 @@
             </div>
         </section>
 
-        <!-- PROJECTS SECTION -->
         <section id="projects">
             <div class="section-header">
                 <p class="section-label">Portfolio</p>
@@ -759,7 +741,6 @@
             </div>
         </section>
 
-        <!-- VISION SECTION -->
         <section id="vision">
             <div class="section-header">
                 <p class="section-label">Future Goals</p>
@@ -788,7 +769,6 @@
             </div>
         </section>
 
-        <!-- CONTACT SECTION -->
         <section id="contact" class="contact-section">
             <div class="section-header">
                 <p class="section-label">Get in Touch</p>
@@ -812,14 +792,12 @@
             </div>
         </section>
 
-        <!-- FOOTER -->
         <footer>
-            <p>© 2025 Alok Vishwakarma | Built with passion & consistency 🚀</p>
+            <p>© 2026 Alok Vishwakarma | Built with passion & consistency 🚀</p>
         </footer>
     </div>
 
     <script>
-        // Smooth scroll for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -830,7 +808,6 @@
             });
         });
 
-        // Add animation on scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -845,7 +822,6 @@
             });
         }, observerOptions);
 
-        // Observe all cards
         document.querySelectorAll('.info-card, .project-card, .vision-item').forEach((el, index) => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
